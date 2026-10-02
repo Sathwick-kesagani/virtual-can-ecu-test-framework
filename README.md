@@ -1,4 +1,5 @@
 # Virtual CAN Bus and ECU Test Framework
+[![CAN and ECU Validation Tests](https://github.com/Sathwick-kesagani/virtual-can-ecu-test-framework/actions/workflows/can-validation.yml/badge.svg)](https://github.com/Sathwick-kesagani/virtual-can-ecu-test-framework/actions/workflows/can-validation.yml)
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Tests](https://img.shields.io/badge/Automated_Tests-12-brightgreen)
