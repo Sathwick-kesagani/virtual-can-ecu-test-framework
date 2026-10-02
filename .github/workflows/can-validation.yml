@@ -1,0 +1,36 @@
+name: CAN and ECU Validation Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  can-validation:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run CAN and ECU tests
+        run: python3 test_can_system.py
+
+      - name: Generate validation report
+        run: python3 can_report_generator.py
+
+      - name: Upload validation outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: can-validation-results
+          path: |
+            can_test_results.csv
+            can_test_summary.svg
+            CAN_VALIDATION_REPORT.md
