@@ -1,0 +1,13 @@
+test_id,test_name,status,details,executed_at_utc
+CAN-001,Create valid standard CAN message,PASS,Requirement verified,2026-10-02T16:17:44.991563+00:00
+CAN-002,Reject invalid CAN arbitration ID,PASS,Requirement verified,2026-10-02T16:17:44.991563+00:00
+CAN-003,Reject oversized classic CAN payload,PASS,Requirement verified,2026-10-02T16:17:44.991563+00:00
+ECU-001,Encode and transmit engine RPM,PASS,Requirement verified,2026-10-02T16:17:44.991563+00:00
+ECU-002,Encode and transmit vehicle speed,PASS,Requirement verified,2026-10-02T16:17:44.991563+00:00
+ECU-003,Encode and transmit coolant temperature,PASS,Requirement verified,2026-10-02T16:17:44.991563+00:00
+ECU-004,Reject out-of-range engine RPM,PASS,Requirement verified,2026-10-02T16:17:44.991563+00:00
+DTC-001,Set overtemperature diagnostic code,PASS,Requirement verified,2026-10-02T16:17:44.991563+00:00
+DTC-002,Clear diagnostic code after recovery,PASS,Requirement verified,2026-10-02T16:17:44.991563+00:00
+FLT-001,Detect injected CAN message drop,PASS,Requirement verified,2026-10-02T16:17:44.991563+00:00
+FLT-002,Detect injected CAN data corruption,PASS,Requirement verified,2026-10-02T16:17:44.991563+00:00
+FLT-003,Recover communication after fault clear,PASS,Requirement verified,2026-10-02T16:17:44.991563+00:00
